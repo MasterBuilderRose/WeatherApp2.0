@@ -15,28 +15,36 @@
   <body>
     <div class="weather-app-container">
       <header>
-        <form>
+        <form class="search-form">
           <input
             type="search"
             placeholder="Enter a city..."
             autocomplete="off"
             autofocus
             required
+            class="search-form-input"
           />
-          <input type="submit" value="Search" />
+          <input type="submit" value="Search" class="search-form-btn" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Florida</h1>
-          <p>
-            Thursday 12:25, scattered clouds
-            <br />
-            Humidity: 74%, Wind: 6.71km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Florida</h1>
+            <p class="weather-app-details">
+              Thursday 12:25, scattered clouds
+              <br />
+              Humidity: <strong>74%</strong>, Wind: <strong>6.71km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">Emoji here</div>
+            <div class="weather-app-temperature">10</div>
+            <div class="weather-app-temp-unit">°C</div>
+          </div>
         </div>
-        <div>Emoji here 10°C</div>
       </main>
+
       <footer>
         This project was coded by
         <a href="https://github.com/MasterBuilderRose" target="_blank"
