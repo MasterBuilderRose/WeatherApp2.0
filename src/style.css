@@ -50,8 +50,8 @@ main {
   font-weight: 500;
 }
 
-.weather-app-details strong {
-  color: #f65282;
+.weather-app-details strong span {
+  color: hsl(342, 90%, 64%);
 }
 .search-form-input {
   background-color: #f9f7fe;
@@ -90,4 +90,8 @@ main {
 .weather-app-temp-unit {
   margin-top: 16px;
   font-size: 28px;
+}
+
+#wind-speed {
+  color: hsl(342, 90%, 64%);
 }
