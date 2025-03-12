@@ -59,4 +59,28 @@ function handleSearchSubmit(event) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+  <div class="weather-forcast">
+    <div class="weather-forcast-day">${day}</div>
+    <div class="weather-forcast-icon">icon</div>
+    <div class="weather-forcast-tempOne">
+      <div class="weather-forcast-tempTwo">22°C</div>
+      <strong>11°C</strong>
+    </div>
+  </div>
+`;
+  });
+  forecastElement.innerHTML = forecastHtml;
+}
+
 searchCity("Miami");
+displayForecast("Miami");
